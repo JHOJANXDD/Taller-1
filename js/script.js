@@ -91,3 +91,7 @@ let num2=parseInt(prompt("Ingrese el Segundo numero"));
     case 'F':
     console.log(`el resultado es ${math.squirt(num1)}`);
 }
+
+for(i=0; i<6; i++){
+    console.log("conchetumare");
+}
