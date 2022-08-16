@@ -69,6 +69,7 @@ if(usuario=="Johan" && contraseña=="hola"){
 )
 */
 //
+/*
 let num1=parseInt(prompt("Ingrese el Primer numero")); 
 let num2=parseInt(prompt("Ingrese el Segundo numero")); 
     let operacion=prompt("Digite la operacion que quiere realizar M=Multiplicar "); 
@@ -95,3 +96,5 @@ let num2=parseInt(prompt("Ingrese el Segundo numero"));
 for(i=0; i<6; i++){
     console.log("conchetumare");
 }
+*/
+
