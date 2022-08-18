@@ -31,7 +31,7 @@ while(seguir=true)
 
 }
 */
-
+/*
 let aprendices=[
     {PrimerNombre:"Jennifer", PrimerApellido:"Fajardo"},
     {PrimerNombre:"Sandra", PrimerApellido:"Rueda"}
@@ -41,3 +41,4 @@ let nombrecompleto=aprendices.map(function(el, in, ar){
 
 }
 )
+*/
