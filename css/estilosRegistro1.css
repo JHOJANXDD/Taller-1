@@ -1,5 +1,5 @@
 body{
-    background: url(../img/FondoIndex.jpg);
+    background: url(../img/FondoRegistro.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -97,8 +97,8 @@ body{
     transition: all 400ms ease;
 }
 .cont-menu nav a:hover{
-    border-left: 5px solid #c7c7c7;
-    background: #32a3d4;
+    border-left: 5px solid #ffffff;
+    background: #dfc11a;
 }
 .cont-menu label{
     position: absolute;
@@ -108,10 +108,34 @@ body{
     cursor: pointer;
     font-size: 18px;
 }
+input {
+    border-radius: 5px;
+    padding-left: 10px;
+}
 
-.imagen{
-    text-align: center;
-    margin-top: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+input:focus {
+    border-radius: 25px;
+    outline: none;
+    padding-left: 10px;
+    background: rgba(25, 25, 25, 0.2);
+    color: white;
+}
+
+.Formulario {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    width: 400px; 
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    }
+
+.select {
+    padding: 5px;
+    margin-bottom: 80px;
 }
