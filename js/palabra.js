@@ -12,6 +12,6 @@ function palabra(){
         window.alert("La palabra convertida a minusculas: "+pal.toLowerCase());
     }
     if(op=='elegir_primercaracter'){
-        window.alert("La primera letra es: "+pal.chartAt(0));
+        window.alert("La primera letra es: "+pal.charAt(0));
     }   
 }
