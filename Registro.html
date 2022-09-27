@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosRegistro1.css">
+    <link rel="shortcut icon" href="img/icono.png">
+    <title>Registro</title>
+</head>
+<body>
+    <center><div class="Registro">
+      <h1 class="tittleform">Registro de usuario</h1><br>
+      <form id="frm-usuario" method="post">
+          <div class="form-group" id="g-tipodoc">
+              <label for="tipodoc">Tipo de documento</label>
+              <div class="form-group-input">
+                  <select name="tipodoc" id="tipodoc" class="frm-input">
+                      <option value="0">Seleccione su tipo de documento </option>
+                      <option value="0">Cedula de Ciudadania </option>
+                      <option value="0">Cedula de Extranjeria </option>
+                  </select>
+                  <span class="msn-error">Seleccione su tipo de documento</span>
+              </div>
+          </div>
+          <div class="form-group" id="g-numdoc">
+              <label for="numdoc">Numero de Documento</label>
+              <div class="form-group-input">
+                  <input type="text" name="numdoc" id="numdoc" class="frm-input">
+                  <i class="fa-solid fa-square-check frm-icono"></i>
+                  <span class="msn-error">Solo se puede ingresar numeros, min 7 - max 10</span>
+              </div>
+          </div>
+          <div class="form-group" id="g-nombre">
+              <label for="nombre">Nombre</label>
+              <div class="form-group-input">
+                  <input type="text" name="nombre" id="nombre" class="frm-input">
+                  <i class="fa-solid fa-square-check frm-icono" ></i>
+                  <span class="msn-error">Solo se puede ingresar letras, max 40 caracteres</span>
+              </div>
+          </div>
+          <div class="form-group" id="g-apellido">
+              <label for="apellido">Apellido</label>
+              <div class="form-group-input">
+                  <input type="text" name="apellido" id="apellido" class="frm-input">
+                  <i class="fa-solid fa-square-check frm-icono"></i>
+                  <span class="msn-error">Solo se puede ingresar letras, max 40 caracteres</span>
+              </div>
+          </div>
+          <div class="form-group" id="g-correo">
+              <label for="correo">Correo</label>
+              <div class="form-group-input">
+                  <input type="text" name="correo" id="correo" class="frm-input">
+                  <i class="fa-solid fa-square-check frm-icono"></i>
+                  <span class="msn-error">El formato del correo debe ser: Ej usuario@midominio.com</span>
+              </div>
+          </div>
+          <div class="form-group" id="g-telefono">
+              <label for="telefono">Telefono</label>
+              <div class="form-group-input">
+                  <input type="text" name="telefono" id="telefono" class="frm-input">
+                  <i class="fa-solid fa-square-check frm-icono"></i>
+                  <span class="msn-error">Solo se puede ingresar numeros, max 10</span>
+              </div>
+          </div>
+          <div class="form-group" id="g-password">
+              <label for="password">Password</label>
+              <div class="form-group-input">
+                  <input type="password" name="password" id="password" class="frm-input">
+                  <i class="fa-solid fa-square-check frm-icono"></i>
+                  <span class="msn-error">Debe incluir min 8 caracteres una mayuscula una minuscula un numero y un caracter especial</span>
+              </div>
+          </div>
+          <div class="form-group" id="g-password2">
+              <label for="password2">Confirmar Password</label>
+              <div class="form-group-input">
+                  <input type="password" name="password2" id="password2" class="frm-input">
+                  <i class="fa-solid fa-square-check frm-icono"></i>
+                  <span class="msn-error">La confirmacion de la contraseña no coincide</span>
+              </div>
+          </div>
+          <div class="form-group" id="g-terminos">
+              <div class="terminos">
+                  <input type="checkbox" name="terminos" id="terminos" class="frm-checkbox">
+                  <label>Acepta terminos de uso</label>
+              </div>
+          </div><br>
+          <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+  </div>
+  <div id="ventanaModal" class="modal">
+      <div class="contenidoModal">
+          <span class="cerrarModal">
+              <i class="fa-solid fa-xmark"></i>
+          </span>
+          <h2>Términos y Condiciones</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, deleniti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque in quis hic deserunt, distinctio sed. Quo nostrum vitae odio consequuntur optio maiores, nisi omnis ex qui fugit ea non praesentium!
+          Assumenda facere molestias quidem consequuntur cum repellendus aperiam soluta similique aliquid quod vitae, dolorem minima ratione, optio deserunt! Autem rem recusandae, ipsam minima omnis repellat? Quibusdam ipsum numquam reiciendis voluptate.
+          Dolorem maxime perferendis suscipit. Consequatur eum, excepturi numquam modi mollitia odit esse eaque impedit illum deleniti id dolorem fugiat beatae dicta? Eius atque consequatur maiores sit explicabo, doloribus mollitia dicta.</p>
+      </div>
+      <script src="js/registro.js"></script>        
+  </div></center>
+      <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<br>
+			<br>	
+			<a href="Calculadora.html">CALCULADORA</a>
+			<a href="Palabras.html">PALABRAS<br></a>
+			<a href="Grados.html">GRADOS</a>
+			<a href="Profesores.html">PROFESORES</a>
+			<a href="Triangulo.html">TRIANGULO</a>
+			<a href="Registro(sin validaciones).html">Registro(SV)<br>(seleccionado)</a>
+			<br>
+			<br>
+      <br>
+      <br>
+			<a href="Index.html">Volver</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</body>
+</html>
