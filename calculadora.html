@@ -1,28 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/estilosCalculadora.css">
+	<link rel="shortcut icon" href="img/icono.png">
 </head>
 <body>
-    <form class="form-ejercicios">
-        <div class="group-form">
-            <label for="num1" class="form-label">Ingresa un numero</label>
-            <input type="number" class="form-control" id="num1">
-            </div>
-            <div class="group form">
-            <label for="num2" class="form-label">Ingresa otro numero</label>
-            <input type="number" class="form-control" id="num2">
-            </div>
-            <div class="group-form">
-            <label>Seleccione una operacion</label>
-            
-            </div>
-        </div>
+	<div class="Numeros">
+        <label>Ingrese un numero:</label>
+        <input type="text" id="numero1"/><br/><br/>
+        <label>Ingrese un numero: </label>
+        <input type="text" id="numero2"/><br/><br/>
+    
+        <select class="select" id="operaciones">
+            <option value="suma">SUMA</option>
+            <option value="resta">RESTA</option>
+            <option value="division">DIVISION</option>
+            <option value="multiplicacion">MULTIPLICACION</option>
+        </select>        
+        <hr>
+        <button onclick="calculadora()">RESULTADO</button>
+        <input class="Resultado_Final" type="text" id="resultado"/>
+        <script src="js/calculadora.js"></script>
+ </div> 
 
-    </form>
-    <script src="js/calculadora.js"></script>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<br>
+			<br>	
+			<a href="Calculadora.html">CALCULADORA (Seleccionado)</a>
+			<a href="Palabras.html">PALABRAS</a>
+			<a href="Grados.html">GRADOS 3</a>
+			<a href="">EJERCICIO 4</a>
+			<br>
+			<br>
+			<br>
+			<br>
+            <br>
+            <br>
+            <br>
+			<br>
+			<a href="Index.html">Volver</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+
+
 </body>
 </html>

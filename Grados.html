@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosGrados.css">
+    <link rel="shortcut icon" href="img/icono.png">
+    <title>Grados</title>
+</head>
+<body>
+    <div class="Grados">
+        <label>Ingrese los Grados a convertir:</label>
+        <input type="text" id="grados"/><br/><br/>
+    
+        <select class="select" id="de">
+            <option>Seleccione una opcion:</option>
+            <option value="1">Celcius</option>
+            <option value="2">Fahrenheit</option>
+            <option value="3">Kelvin</option>
+        </select>
+		<select class="select" id="para">
+            <option>Convertir a:</option>
+            <option value="1">Celcius</option>
+            <option value="2">Farenheit</option>
+            <option value="3">Kelvin</option>
+        </select>
+        <br>           
+        <button onclick="grados()" type="submit">Convertir</button>
+        <input class="Resultado" type="text" id="resultado"/>
+        <script src="js/grados.js"></script>
+ </div> 
+    <header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<br>
+			<br>	
+			<a href="Calculadora.html">CALCULADORA</a>
+			<a href="Palabras.html">PALABRAS<br></a>
+			<a href="Grados.html">GRADOS<br>(Seleccionado)</a>
+			<a href="Profesores.html">PROFESORES</a>
+			<br>
+			<br>
+			<br>
+			<br>
+            <br>
+            <br>
+            <br>
+			<br>
+			<a href="Index.html">Volver</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+    
+</body>
+</html>
