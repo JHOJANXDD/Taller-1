@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Circulo</title>
 </head>
 <body>
-    
+    <div class="figura">
+        <img src="../img/Circulo.png"  width="250px" height="250px"><br>
+        <button id="pericir">Perimetro</button>
+        <button id="arecir">Area</button>
+    </div>
+    <div id="ventanacir" class="modaltri">
+        <div class="contenidotri">
+          <span class="cerrarmodalcir"><i class="fa-solid fa-xmark"></i></span>
+          <form class="formtri" id="calcir">
+            <h1>Perimetro Circulo</h1>
+            <label>Escriba el radio</label>
+            <input type="text" id="radiocir"><br>
+            <button type="submit" class="boton" onclick="calcularCP()">Calcular</button>
+          </form><br>
+        </div>
+      </div>
+
+      <div id="ventanacirar" class="modaltri">
+        <div class="contenidotri">
+          <span class="cerrarmodalcirar"><i class="fa-solid fa-xmark"></i></span>
+          <form class="formtri" id="calcirar">
+            <h1>Area Circulo</h1>
+            <label>Escriba el radio</label>
+            <input type="text" id="radiocirar"><br>
+            <button type="submit" class="boton" onclick="calcularCA()">Calcular</button>
+          </form><br>
+        </div>
+    </div>
+    <script src="../js/figuras.js"></script>    
+
 </body>
 </html>

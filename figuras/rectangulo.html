@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>RECTANGULO</title>
 </head>
 <body>
+    <div class="figura">
+        <img src="../img/Rectangulo.png" width="250px" height="250px"><br>
+        <button id="perirec">Perimetro</button>
+        <button id="arerec">Area</button>
+    </div>
+    <div id="ventanarec" class="modaltri">
+        <div class="contenidotri">
+          <form class="formtri" id="calrec">
+            <h1>Perimetro Rectangulo</h1>
+            <label>Escriba la base del rectangulo</label>
+            <input type="text" id="baserec"><br>
+            <label>Escriba la altura del rectangulo</label>
+            <input type="text" id="altrec"><br>
+            <button type="submit" class="boton" onclick="calcularRP()">Calcular</button>
+          </form><br>
+        </div>
+      </div>
+
+      <div id="ventanareca" class="modaltri">
+        <div class="contenidotri">
+          <form class="formtri" id="calreca">
+            <h1>Area Rectangulo</h1>
+            <label>Escriba la base del rectangulo</label>
+            <input type="text" id="basereca"><br>
+            <label>Escriba la altura del rectangulo</label>
+            <input type="text" id="altreca"><br>
+            <button type="submit" class="boton" onclick="calcularRA()">Calcular</button>
+          </form><br>
+        </div>
+    </div>
+    <script src="../js/figuras.js"></script>
     
 </body>
 </html>

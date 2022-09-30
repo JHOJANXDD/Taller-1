@@ -1,4 +1,4 @@
-/*TRIANGULO P*/
+/* Perimetro Triangulo */
 
 let btnmodal=document.getElementById("peritri");
 
@@ -23,7 +23,7 @@ function calcular(){
     alert("El perimetro del triangulo es: "+pt)
 }
 
-/*TRIANGULO A*/
+/* area Triangulo */
 
 let btnmodalar=document.getElementById("aretri");
 
@@ -47,7 +47,7 @@ function calcularA(){
     alert("La altura del triangulo es: "+at)
 }
 
-/*CIRCULO P*/
+/* Perimetro Circulo */
 
 let btnmodalcir=document.getElementById("pericir");
 
@@ -70,7 +70,7 @@ function calcularCP(){
     alert("El perimetro del circulo es: "+pc)
 }
 
-/*CIRCULO A*/
+/* Area Circulo */
 
 let btnmodalcira=document.getElementById("arecir");
 
@@ -93,7 +93,7 @@ function calcularCA(){
     alert("El area del circulo es: "+ac)
 }
 
-/*CUADRADO P*/
+/* Perimetro Cuadrado */
 
 let btnmodalcua=document.getElementById("pericua");
 
@@ -116,7 +116,7 @@ function calcularPCu(){
     alert("El Perimetro del cuadrado es: "+gh)
 }
 
-/*CUADRADO A*/
+/* Area Cuadrado */
 
 let btnmodalcuaa=document.getElementById("arecua");
 
@@ -139,7 +139,7 @@ function calcularACu(){
     alert("El area del cuadrado es: "+po)
 }
 
-/*RECTANGULO P*/
+/* Perimetro Rectangulo */
 
 let btnmodalrec=document.getElementById("perirec");
 
@@ -163,7 +163,7 @@ function calcularRP(){
     alert("El Perimetro del rectangulo es: "+fg)
 }
 
-/*RECTANGULO A*/
+/* Area Rectangulo */
 
 let btnmodalreca=document.getElementById("arerec");
 

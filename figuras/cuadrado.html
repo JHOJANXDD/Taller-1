@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>CUADRADO</title>
 </head>
 <body>
-    
+    <div class="figura">
+        <img src="../img/Cuadrado.png" width="250px" height="250px"><br>
+        <button id="peritri">Perimetro</button>
+        <button id="aretri">Area</button>
+    </div>
+    <div id="ventanacua" class="modaltri">
+        <div class="contenidotri">
+          <span class="cerrarmodalcua"><i class="fa-solid fa-xmark"></i></span>
+          <form class="formtri" id="calcua">
+            <h1>Perimetro Cuadrado</h1>
+            <label>Escriba un lado del cuadrado</label>
+            <input type="text" id="ladocuad"><br>
+            <button type="submit" class="boton" onclick="calcularPCu()">Calcular</button>
+          </form><br>
+        </div>
+      </div>
+
+      <div id="ventanacuaa" class="modaltri">
+        <div class="contenidotri">
+          <span class="cerrarmodalcuaa"><i class="fa-solid fa-xmark"></i></span>
+          <form class="formtri" id="calcuaa">
+            <h1>Area Cuadrado</h1>
+            <label>Escriba un lado del cuadrado</label>
+            <input type="text" id="ladocuada"><br>
+            <button type="submit" class="boton" onclick="calcularACu()">Calcular</button>
+          </form><br>
+        </div>
+    </div>
+    <script src="../js/figuras.js"></script>
+
 </body>
 </html>

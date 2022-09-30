@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">   
     <title>TRIANGULO</title>
 </head>
 <body>
-    
+    <div class="figura">
+        <img src="../img/Triangulo.png" width="250px" height="250px"><br>
+        <button id="peritri">Perimetro</button>
+        <button id="aretri">Area</button>
+      </div>
+      <div id="ventanatri" class="modaltri">
+        <div class="contenidotri">
+          <form class="formtri" id="caltri">
+            <h1>Perimetro Triangulo</h1>
+            <label>Primer Lado</label>
+            <input type="text" id="pritri"><br><br>
+            <label>Segundo Lado</label>
+            <input type="text" id="segtri"><br><br>
+            <label>Tercer Lado</label>
+            <input type="text" id="tertri"><br><br>
+            <button type="submit" class="boton" onclick="calcular()">Calcular</button>
+          </form><br>
+        </div>
+      </div>
+      <div id="ventanatriar" class="modaltri">
+        <div class="contenidotri">
+          <form class="formtri" id="caltriar">
+            <h1>Area Triangulo</h1>
+            <label>Base</label>
+            <input type="text" id="basetri"><br>
+            <label>Altura</label>
+            <input type="text" id="altutri"><br><br>
+            <button type="submit" class="boton" onclick="calcularA()">Calcular</button>
+          </form><br>
+        </div>
+      </div>
+
+      <script src="../js/figuras.js"></script>
 </body>
 </html>
