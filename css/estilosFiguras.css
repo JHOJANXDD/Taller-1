@@ -27,7 +27,7 @@ body{
     line-height:100px;
 }
 .container .btn-menu label{
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 25px;
     cursor: pointer;
 }
@@ -53,12 +53,8 @@ body{
     margin-right: 5px;
 }
 .container .menu a:hover{
-    border-bottom: 2px solid #c7c7c7;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 5px;
-}
-.opciones{
-    margin-left: 5.5em;
-    margin-top: 7rem;
 }
 #btn-menu{
     display: none;
@@ -80,7 +76,7 @@ body{
 .cont-menu{
     width: 100%;
     max-width: 250px;
-    background: #383738;
+    background: #383738;    
     height: 100vh;
     position: relative;
     transition: all 500ms ease;
@@ -96,108 +92,27 @@ body{
     display: block;
     text-decoration: none;
     padding: 20px;
-    color: #c7c7c7;
+    color: #ffffff;
     border-left: 5px solid transparent;
     transition: all 400ms ease;
 }
 .cont-menu nav a:hover{
-    border-left: 5px solid #c7c7c7;
-    background: #ab234e;
+    border-left: 5px solid #ff0000;
+    background: #4b4b4b;
 }
 .cont-menu label{
     position: absolute;
     right: 5px;
     top: 10px;
-    color: #fff;
+    color: rgb(250, 0, 0);
     cursor: pointer;
     font-size: 18px;
 }
-
 input {
     border-radius: 5px;
     padding-left: 10px;
 }
-
-input:focus {
-    border-radius: 25px;
-    outline: none;
-    padding-left: 10px;
-    background: rgba(25, 25, 25, 0.2);
-    color: white;
-}
-
-.Numeros {
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
-    width: 400px; 
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
-.modaltri{
-    background-color: rgba(0, 0,0, 0.5);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow: auto;
-    padding-top: 5%;
-    display: none;
-}
-
-.contenidotri{
-    background-color: white;
-    margin: auto;
-    width: 60%;
-    position: relative;
-    padding: 1rem;
-    animation-name: animarmodal;
-    animation-duration: 0.5s;
-}
-
-@keyframes animarmodal {
-    from{top: -300px; opacity: 0;}
-    to{top: 0; opacity: 1;}
-}
-
-.cerrarModaltri{
-    font-size: 2rem;
-    float: right;
-}
-
-.cerrarModaltri:hover{
-    cursor: pointer;
-}
-
-form h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    color: crimson;
-}
-
-form label {
-    color: black;
-}
-
-form input:hover {
-    color: blue;
-}
-
-.boton:hover{
-   background-color: rgb(228, 139, 156);
-}
-
-.boton{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-    border: none;
-    padding: 5px;
+.opciones{
+    margin-left: 12rem;
+    margin-top: 12rem;
 }
