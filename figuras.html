@@ -15,11 +15,159 @@
 		</div>
 	</header>
 	<div class="opciones">
-		<a><img src="img/Cuadrado.png" width="250" height="250"></a>
-		<img src="img/Triangulo.png" width="250" height="250">
-		<img src="img/Circulo.png" width="250" height="250">
-		<img src="img/Cuadrado.png" width="550" height="250">
-	</div>
+		<div class="container">
+		  <div class="row row-cols-1 row-cols-md-2 g-4">
+			<div class="col">
+			  <div class="card">
+				<img src="img/triangulo.png" class="card-img-top" width="300px" height="350px">
+				<div class="card-body">
+				  <h5 class="card-title">Triangulo</h5>
+				  <button class="btn btn-danger" id="peritri">Perimetro</button>
+				  <button class="btn btn-danger" id="aretri">Area</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card">
+				<img src="img/circulo.png" class="card-img-top" width="300px" height="350px">
+				<div class="card-body">
+				  <h5 class="card-title">Circulo</h5>
+				  <button class="btn btn-danger" id="pericir">Perimetro</button>
+				  <button class="btn btn-danger" id="arecir">Area</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card">
+				<img src="img/cuadrado.png" class="card-img-top" width="300px" height="350px">
+				<div class="card-body">
+				  <h5 class="card-title">Cuadrado</h5>
+				  <button class="btn btn-danger" id="pericua">Perimetro</button>
+				  <button class="btn btn-danger" id="arecua">Area</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card">
+				<img src="img/rectangulo.png" class="card-img-top" width="300px" height="350px">
+				<div class="card-body">
+				  <h5 class="card-title">Rectangulo</h5>
+				  <button class="btn btn-danger" id="perirec">Perimetro</button>
+				  <button class="btn btn-danger" id="arerec">Area</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div><br><br>
+	  
+		<div id="ventanatri" class="modaltri">
+		  <div class="contenidotri">
+			<span class="cerrarmodaltri"><i class="fa-solid fa-xmark icon"></i></span>
+			<form class="formtri" id="caltri">
+			  <h1>Perimetro Triangulo</h1>
+			  <label>Primer Lado</label>
+			  <input type="text" id="pritri"><br>
+			  <label>Segundo Lado</label>
+			  <input type="text" id="segtri"><br>
+			  <label>Tercer Lado</label>
+			  <input type="text" id="tertri"><br><br>
+			  <button type="submit" class="boton" onclick="calcular()">Calcular</button>
+			</form><br>
+		  </div>
+		</div>
+	  
+		<div id="ventanatriar" class="modaltri">
+		  <div class="contenidotri">
+			<span class="cerrarmodaltriar"><i class="fa-solid fa-xmark"></i></span>
+			<form class="formtri" id="caltriar">
+			  <h1>Area Triangulo</h1>
+			  <label>Base</label>
+			  <input type="text" id="basetri"><br>
+			  <label>Altura</label>
+			  <input type="text" id="altutri"><br><br>
+			  <button type="submit" class="boton" onclick="calcularA()">Calcular</button>
+			</form><br>
+		  </div>
+		</div>
+	  
+	  
+		<div id="ventanacir" class="modaltri">
+		  <div class="contenidotri">
+			<span class="cerrarmodalcir"><i class="fa-solid fa-xmark"></i></span>
+			<form class="formtri" id="calcir">
+			  <h1>Perimetro Circulo</h1>
+			  <label>Escriba el radio</label>
+			  <input type="text" id="radiocir"><br>
+			  <button type="submit" class="boton" onclick="calcularCP()">Calcular</button>
+			</form><br>
+		  </div>
+		</div>
+	  
+		<div id="ventanacirar" class="modaltri">
+		  <div class="contenidotri">
+			<span class="cerrarmodalcirar"><i class="fa-solid fa-xmark"></i></span>
+			<form class="formtri" id="calcirar">
+			  <h1>Area Circulo</h1>
+			  <label>Escriba el radio</label>
+			  <input type="text" id="radiocirar"><br>
+			  <button type="submit" class="boton" onclick="calcularCA()">Calcular</button>
+			</form><br>
+		  </div>
+		</div>
+	  
+		<div id="ventanacua" class="modaltri">
+		  <div class="contenidotri">
+			<span class="cerrarmodalcua"><i class="fa-solid fa-xmark"></i></span>
+			<form class="formtri" id="calcua">
+			  <h1>Perimetro Cuadrado</h1>
+			  <label>Escriba un lado del cuadrado</label>
+			  <input type="text" id="ladocuad"><br>
+			  <button type="submit" class="boton" onclick="calcularPCu()">Calcular</button>
+			</form><br>
+		  </div>
+		</div>
+	  
+		<div id="ventanacuaa" class="modaltri">
+		  <div class="contenidotri">
+			<span class="cerrarmodalcuaa"><i class="fa-solid fa-xmark"></i></span>
+			<form class="formtri" id="calcuaa">
+			  <h1>Area Cuadrado</h1>
+			  <label>Escriba un lado del cuadrado</label>
+			  <input type="text" id="ladocuada"><br>
+			  <button type="submit" class="boton" onclick="calcularACu()">Calcular</button>
+			</form><br>
+		  </div>
+		</div>
+	  
+		<div id="ventanarec" class="modaltri">
+		  <div class="contenidotri">
+			<span class="cerrarmodalrec"><i class="fa-solid fa-xmark"></i></span>
+			<form class="formtri" id="calrec">
+			  <h1>Perimetro Rectangulo</h1>
+			  <label>Escriba la base del rectangulo</label>
+			  <input type="text" id="baserec"><br>
+			  <label>Escriba la altura del rectangulo</label>
+			  <input type="text" id="altrec"><br>
+			  <button type="submit" class="boton" onclick="calcularRP()">Calcular</button>
+			</form><br>
+		  </div>
+		</div>
+	  
+		<div id="ventanareca" class="modaltri">
+		  <div class="contenidotri">
+			<span class="cerrarmodalreca"><i class="fa-solid fa-xmark"></i></span>
+			<form class="formtri" id="calreca">
+			  <h1>Area Rectangulo</h1>
+			  <label>Escriba la base del rectangulo</label>
+			  <input type="text" id="basereca"><br>
+			  <label>Escriba la altura del rectangulo</label>
+			  <input type="text" id="altreca"><br>
+			  <button type="submit" class="boton" onclick="calcularRA()">Calcular</button>
+			</form><br>
+		  </div>
+		</div>
+	  </div>
+	  <script src="js/figuras.js"></script>
 	<div class="capa"></div>
 	<input type="checkbox" id="btn-menu">
 	<div class="container-menu">
